@@ -24,6 +24,18 @@ const SparkLine = ({ currentColor, id, type, height, width, data, color }) => {
         format: "${x} : data ${yval}",
         trackLineSettings: { visible: true },
       }}
+      axisSettings={{
+        value: 25,
+        lineSettings: {
+          visible: true,
+          color: "blue",
+          dashArray: 0,
+        },
+      }}
+      markerSettings={{
+        visible: ["All"],
+        fill: "blue",
+      }}
     >
       <Inject services={[SparklineTooltip]} />
     </SparklineComponent>
