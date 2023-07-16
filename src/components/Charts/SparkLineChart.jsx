@@ -28,13 +28,13 @@ const SparkLine = ({ currentColor, id, type, height, width, data, color }) => {
         value: 25,
         lineSettings: {
           visible: true,
-          color: "blue",
+          color: currentColor,
           dashArray: 0,
         },
       }}
       markerSettings={{
         visible: ["All"],
-        fill: "blue",
+        fill: currentColor,
       }}
     >
       <Inject services={[SparklineTooltip]} />
